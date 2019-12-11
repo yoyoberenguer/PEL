@@ -20,8 +20,7 @@ BMP, TGA, PNG, JPEG
 PEL was originally written in python then ported into CYTHON and C programming language to increase 
 overall performances to allow real time rendering. 
 
-Most of PEL algorithms are iterating over all the surface’s pixels to apply transformations 
-and (raster type images). 
+Most of PEL algorithms are iterating over all the surface’s pixels to apply transformations (raster type images). 
 As a result, processing large image sizes will have a significant impact on the total processing time.
  
 You can boost the overall performances by setting a variable to use multiprocessing before compiling 
