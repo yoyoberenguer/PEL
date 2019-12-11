@@ -1,6 +1,5 @@
-# PEL
-PEL (Pygame Effect Library)
-Under active development 
+# PEL (Pygame Effect Library)
+### Under active development 
 
 
 ## What is PEL, 
