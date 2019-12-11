@@ -5,7 +5,7 @@ Under active development
 ```
 What is PEL, 
 PEL is an open source project (MIT License) written in python containing a library of special effects, 
-image processing tools, and game methods to use in conjunction with PYGAME library.
+image processing tools, and game methods to be use in conjunction with PYGAME library.
 Amongst the image processing tools PEL contains the following methods Sobel, Feldman, Canny filter and 
 Prewit algorithms, Gaussian blur and image sharpening tools, Sepia, Grayscale, Hue shift, control over
 the luminescence and saturation.
@@ -28,7 +28,7 @@ It is highly recommended to use the multi-processing option if your CPU has at l
 will be used intensively during image processing) leaving your system slightly un-responsive if the number of threads is not high enough. 
 
 However, if you are using PEL for image processing you can safely set the variable to use multiprocessing 
-capabilities to transform you images as fast as possible.
+capabilities to modify you images as quick as possible.
 
 In addition, PEL provides the following methods:
 
@@ -57,6 +57,23 @@ Bilateral filter,
 Colour reduction, 
 Glitch effect, 
 Fisheye, 
+
+Soon to be added 
+Alien writing, tv turned off, half tone filter, BOID algorithm, dolly zoom effect, long exposure effect, 
+lens effect, zoom in, zoom out, elastic collision algorithm
+PROGRESSIVE ZOOM 
+LENS EFFECT on texture
+CAMERA LENS EFFECT
+PIXEL EFFECT
+CROP IMAGE 
+ELECTRICITY EFFECT
+WELL COLLAPSING EFFECT
+TELEPORTATION EFFECT
+WIND EFFECT
+RAIN EFFECT
+FRACTAL
+PERLIN NOISE
+NEON
 Fire effect, 
 Moiré effect, 
 Tunnel effect, 
@@ -65,27 +82,6 @@ Icon glowing effect,
 Cartoonish effect, 
 DOG difference of Gaussian,
 Lateral / vertical scan effect, 
-
-
-Soon to be added 
-Alien writing, tv turned off, half tone filter, BOID algorithm, dolly zoom effect, long exposure effect, 
-lens effect, zoom in, zoom out, elastic collision algorithm
-TODO BLACK AND WHITE TEXTURES
-TODO GRAY SCALE WITH LUMINESCENSE
-PROGRESSIVE ZOOM FOR SPRITE CHANGING LAYERS
-LENS EFFECT on texture
-CAMERA LENS EFFECT
-PIXEL EFFECT
-CROP IMAGE 
-ELECTRICITY
-WELL COLLAPSING EFFECT (fragments collapsing to focal point).
-TELEPORTATION 
-WIND EFFECT
-RAIN EFFECT
-FRACTAL
-PERLIN NOISE
-NEON
-
 
 Requirements
 PYTHON 3, 
