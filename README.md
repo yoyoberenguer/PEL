@@ -6,9 +6,11 @@
 ```
 PEL is an open source project (MIT License) written in python containing special effects, 
 image processing tools and game methods to be use in addition to PYGAME library.
+
 Amongst the image processing tools, PEL contains the following methods:
 Sobel, Feldman, Canny filter, Prewit algorithms, Gaussian blur and image sharpening tools, Sepia, Grayscale, 
 Hue shift, control over the luminescence and saturation.
+
 By default, PEL will works with the following file extensions (if pygame is built with full image support):
 JPG, PNG, GIF (non-animated), BMP, PCX, TGA (uncompressed), TIFF, LBM, PBM, XPM 
 
