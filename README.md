@@ -3,12 +3,12 @@ PEL (Pygame Effect Library)
 Under active development 
 
 ```
-What is PEL, 
-PEL is an open source project (MIT License) written in python containing a library of special effects, 
-image processing tools, and game methods to be use in addition to PYGAME library.
-Amongst the image processing tools PEL contains the following methods Sobel, Feldman, Canny filter and 
-Prewit algorithms, Gaussian blur and image sharpening tools, Sepia, Grayscale, Hue shift, control over
-the luminescence and saturation.
+## What is PEL, 
+PEL is an open source project (MIT License) written in python containing special effects, 
+image processing tools and game methods to be use in addition to PYGAME library.
+Amongst the image processing tools, PEL contains the following methods:
+Sobel, Feldman, Canny filter, Prewit algorithms, Gaussian blur and image sharpening tools, Sepia, Grayscale, 
+Hue shift, control over the luminescence and saturation.
 By default, PEL will works with the following file extensions (if pygame is built with full image support):
 JPG, PNG, GIF (non-animated), BMP, PCX, TGA (uncompressed), TIFF, LBM, PBM, XPM 
 
@@ -16,7 +16,7 @@ Saving images only supports a limited set of formats:
 BMP, TGA, PNG, JPEG
 
 PEL was originally written in python then ported into CYTHON and C programming language to increase 
-processing time to allow real time rendering. 
+overall processing time to allow real time rendering. 
 
 Most of PEL algorithm are iterating over all the surface’s pixels to apply transformation and 
 changes (raster type images). 
@@ -30,8 +30,7 @@ will be used intensively during image processing) leaving your system slightly u
 However, if you are using PEL for image processing you can safely set the variable to use multiprocessing 
 capabilities to modify you images as quick as possible.
 
-In addition, PEL provides the following methods:
-
+## In addition, PEL provides the following methods:
 Add/remove transparency to image
 Surface scrolling (horizontal/vertical, right/left)
 Create gradient surface
@@ -58,9 +57,15 @@ Colour reduction,
 Glitch effect, 
 Fisheye, 
 
-Soon to be added 
-Alien writing, tv turned off, half tone filter, BOID algorithm, dolly zoom effect, long exposure effect, 
-lens effect, zoom in, zoom out, elastic collision algorithm
+## And soon to be added:
+Alien writing, 
+tv turned off, 
+half tone filter, 
+BOID algorithm, 
+dolly zoom effect, 
+long exposure effect, 
+lens effect, zoom in, zoom out, 
+elastic collision algorithm
 PROGRESSIVE ZOOM 
 LENS EFFECT on texture
 CAMERA LENS EFFECT
@@ -83,7 +88,7 @@ Cartoonish effect,
 DOG difference of Gaussian,
 Lateral / vertical scan effect, 
 
-Requirements
+## Requirements
 PYTHON 3, 
 PYGAME version 1.8 
 CYTHON
