@@ -31,7 +31,7 @@ It is highly recommended to use the multi-processing option if your CPU has at l
 un-responsive if the number of threads is not high enough. 
 
 However, if you are using PEL for image processing you can safely set the variable to use multiprocessing 
-capabilities to modify you images as quick as possible.
+capabilities to modify images as quick as possible.
 ```
 ## In addition, PEL provides the following methods:
 ```
