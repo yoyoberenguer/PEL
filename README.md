@@ -24,9 +24,11 @@ changes (raster type images).
 Consequently, processing large image sizes will have a significant impact on the total processing time.
  
 You can boost the overall performances by setting a variable to use multiprocessing before compiling 
-the project in order to use the full potential of the multiprocessing capability (OPENMP, open multiprocessing programming).
-It is highly recommended to use the multi-processing option if your CPU has at least 8 threads (most of the threads 
-will be used intensively during image processing) leaving your system slightly un-responsive if the number of threads is not high enough. 
+the project in order to use the full potential of the multiprocessing capability (OPENMP, open 
+multiprocessing programming).
+It is highly recommended to use the multi-processing option if your CPU has at least 8 threads 
+(most of the threads will be used intensively during image processing) leaving your system slightly 
+un-responsive if the number of threads is not high enough. 
 
 However, if you are using PEL for image processing you can safely set the variable to use multiprocessing 
 capabilities to modify you images as quick as possible.
