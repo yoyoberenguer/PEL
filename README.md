@@ -30,7 +30,7 @@ It is highly recommended to use the multi-processing option if your CPU has at l
 (most of the threads will be used intensively during image processing) leaving your system slightly 
 un-responsive if the number of threads is not high enough. 
 
-However, if you are using PEL for image processing you can safely set the variable to use multiprocessing 
+If you are using PEL for image processing you can safely set the variable to use multiprocessing 
 capabilities to modify images as quick as possible.
 ```
 ## In addition, PEL provides the following methods:
