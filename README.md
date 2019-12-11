@@ -2,8 +2,9 @@
 PEL (Pygame Effect Library)
 Under active development 
 
-```
+
 ## What is PEL, 
+```
 PEL is an open source project (MIT License) written in python containing special effects, 
 image processing tools and game methods to be use in addition to PYGAME library.
 Amongst the image processing tools, PEL contains the following methods:
@@ -29,8 +30,9 @@ will be used intensively during image processing) leaving your system slightly u
 
 However, if you are using PEL for image processing you can safely set the variable to use multiprocessing 
 capabilities to modify you images as quick as possible.
-
+```
 ## In addition, PEL provides the following methods:
+```
 Add/remove transparency to image
 Surface scrolling (horizontal/vertical, right/left)
 Create gradient surface
@@ -56,8 +58,9 @@ Bilateral filter,
 Colour reduction, 
 Glitch effect, 
 Fisheye, 
-
+```
 ## And soon to be added:
+```
 Alien writing, 
 tv turned off, 
 half tone filter, 
@@ -87,8 +90,9 @@ Icon glowing effect,
 Cartoonish effect, 
 DOG difference of Gaussian,
 Lateral / vertical scan effect, 
-
+```
 ## Requirements
+```
 PYTHON 3, 
 PYGAME version 1.8 
 CYTHON
