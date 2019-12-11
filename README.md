@@ -16,11 +16,11 @@ Saving images only supports a limited set of formats:
 BMP, TGA, PNG, JPEG
 
 PEL was originally written in python then ported into CYTHON and C programming language to increase 
-overall processing time to allow real time rendering. 
+overall performances to allow real time rendering. 
 
-Most of PEL algorithm are iterating over all the surface’s pixels to apply transformation and 
-changes (raster type images). 
-Consequently, processing large image sizes will have a significant impact on the total processing time.
+Most of PEL algorithms are iterating over all the surface’s pixels to apply transformations 
+and (raster type images). 
+As a result, processing large image sizes will have a significant impact on the total processing time.
  
 You can boost the overall performances by setting a variable to use multiprocessing before compiling 
 the project in order to use the full potential of the multiprocessing capability (OPENMP, open 
