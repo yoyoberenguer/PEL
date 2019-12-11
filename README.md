@@ -5,7 +5,7 @@ Under active development
 ```
 What is PEL, 
 PEL is an open source project (MIT License) written in python containing a library of special effects, 
-image processing tools, and game methods to be use in conjunction with PYGAME library.
+image processing tools, and game methods to be use in addition to PYGAME library.
 Amongst the image processing tools PEL contains the following methods Sobel, Feldman, Canny filter and 
 Prewit algorithms, Gaussian blur and image sharpening tools, Sepia, Grayscale, Hue shift, control over
 the luminescence and saturation.
