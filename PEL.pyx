@@ -127,9 +127,9 @@ cdef extern from 'library.c' nogil:
     unsigned char min_rgb_value(unsigned char red, unsigned char green, unsigned char blue);
     unsigned char umax_(unsigned char a, unsigned char b);
 
-#***********************************************
-#**********  METHOD TRANSPARENCY ***************
-#***********************************************
+# ***********************************************
+# **********  METHOD TRANSPARENCY ***************
+# ***********************************************
 
 # ADD TRANSPARENCY -----------------------------
 def make_transparent(image_: Surface, alpha_: int)->Surface:
@@ -155,9 +155,9 @@ def high_th_alpha(surface_: Surface, new_alpha_: int, threshold_: int) -> Surfac
     return high_threshold_alpha_c(surface_, new_alpha_, threshold_)
 
 
-#***********************************************
-#**********  METHOD GREYSCALE ******************
-#***********************************************
+# ***********************************************
+# **********  METHOD GREYSCALE ******************
+# ***********************************************
 
 # CONSERVE LIGHTNESS ----------------------------
 def greyscale_light_alpha(image: Surface)->Surface:
@@ -196,10 +196,10 @@ def greyscale_3d_to_2d(array_: ndarray)->ndarray:
 def greyscale_2d_to_3d(array_: ndarray)->ndarray:
     return greyscale_2d_to_3d_c(array_)
 
-#-----------------------------------------------
-#***********************************************
-#**********  METHOD COLORIZE  ******************
-#***********************************************
+
+# ***********************************************
+# **********  METHOD COLORIZE  ******************
+# ***********************************************
 def redscale(image: Surface)->Surface:
     return redscale_c(image)
 
@@ -219,9 +219,9 @@ def bluescale_alpha(image: Surface)->Surface:
     return bluescale_alpha_c(image)
 
 
-#***********************************************
-#*********  METHOD LOADING PER-PIXEL  **********
-#***********************************************
+# ***********************************************
+# *********  METHOD LOADING PER-PIXEL  **********
+# ***********************************************
 def load_per_pixel(file: str)->Surface:
     return load_per_pixel_c(file)
 
@@ -229,9 +229,9 @@ def load_image32(path: str)->Surface:
     return load_image32_c(path)
 
 
-#***********************************************
-#********* METHOD LOAD SPRITE SHEET ************
-#***********************************************
+# ***********************************************
+# ********* METHOD LOAD SPRITE SHEET ************
+# ***********************************************
 def spritesheet_per_pixel(file_: str, chunk_: int,
                           colums_: int, rows_: int)->list:
     return spritesheet_per_pixel_c(file_, chunk_, colums_, rows_)
@@ -252,15 +252,15 @@ def spritesheet_fs8(file: str, chunk: int, columns_: int,
 def spritesheet_new(file_: str, chunk_: int, columns_: int, rows_: int):
     return spritesheet_new_c(file_, chunk_, columns_, rows_)
 
-#***********************************************
-#**********  METHOD SHADOW *********************
-#***********************************************
+# ***********************************************
+# **********  METHOD SHADOW *********************
+# ***********************************************
 def shadow(image: Surface)->Surface:
     return shadow_c(image)
 
-#***********************************************
-#**********  METHOD MAKE_ARRAY  ****************
-#***********************************************
+# ***********************************************
+# **********  METHOD MAKE_ARRAY  ****************
+# ***********************************************
 def make_array(rgb_array_: ndarray, alpha_:ndarray):
     return make_array_c_code(rgb_array_, alpha_)
 
@@ -270,9 +270,9 @@ def make_array_trans(rgb_array_: ndarray, alpha_:ndarray):
 def make_array_from_buffer(buffer_: BufferProxy, size_: tuple)->ndarray:
     return make_array_from_buffer_c(buffer_, size_)
 
-#***********************************************
-#**********  METHOD MAKE_SURFACE ***************
-#***********************************************
+# ***********************************************
+# **********  METHOD MAKE_SURFACE ***************
+# ***********************************************
 
 def make_surface(rgba_array: ndarray) -> Surface:
     return make_surface_c(rgba_array)
@@ -292,9 +292,9 @@ def make_surface_c5(rgba_array_: ndarray)->Surface:
 def make_surface_c6(rgba_array_: ndarray)->Surface:
     return make_surface_c_6(rgba_array_)
 
-#*********************************************
-#**********  METHOD SPLIT RGB ****************
-#*********************************************
+# *********************************************
+# **********  METHOD SPLIT RGB ****************
+# *********************************************
 
 def rgb_split_channels(surface_: Surface)->tuple:
     return rgb_split_channels_c(surface_)
@@ -311,9 +311,9 @@ def green_channel(surface_: Surface)->Surface:
 def blue_channel(surface_: Surface)->Surface:
     return blue_channel_c(surface_)
 
-#*********************************************
-#**********  METHOD FISHEYE  *****************
-#*********************************************
+# *********************************************
+# **********  METHOD FISHEYE  *****************
+# *********************************************
 
 def fish_eye(image)->Surface:
     return fish_eye_c(image)
@@ -321,9 +321,9 @@ def fish_eye(image)->Surface:
 def fish_eye_32(image)->Surface:
     raise NotImplementedError
 
-#*********************************************
-#**********  METHOD ROTATE  ******************
-#*********************************************
+# *********************************************
+# **********  METHOD ROTATE  ******************
+# *********************************************
 def rotate_inplace(image: Surface, angle: int)->Surface:
     return rotate_inplace_c(image, angle)
 
@@ -333,9 +333,9 @@ def rotate_24(image: Surface, angle: int)->Surface:
 def rotate_32(image: Surface, angle: int)->Surface:
     return rotate_c32(image, angle)
 
-#*********************************************
-#**********  METHOD HUE SHIFT  ***************
-#*********************************************
+# *********************************************
+# **********  METHOD HUE SHIFT  ***************
+# *********************************************
 def hue_surface_24(surface_: Surface, float shift_)->Surface:
     return hue_surface_24c(surface_, shift_)
 
