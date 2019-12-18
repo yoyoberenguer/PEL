@@ -24,8 +24,8 @@ Most of PEL algorithms are iterating over all the surface’s pixels to apply tr
 As a result, processing large image sizes will have a significant impact on the total processing time.
  
 You can boost the overall performances by setting a variable to use multiprocessing before compiling 
-the project in order to use the full potential of the multiprocessing capability (OPENMP, open 
-multiprocessing programming).
+the project. This will enable full potential of multiprocessing (OPENMP, open multiprocessing programming) when 
+using PEL tools.
 It is highly recommended to use the multi-processing option if your CPU has at least 8 threads 
 (most of the threads will be used intensively during image processing) leaving your system slightly 
 un-responsive if the number of threads is not high enough. 
