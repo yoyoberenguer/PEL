@@ -118,5 +118,19 @@ def make_transparent_buffer(image_: Surface, alpha_: int)->Surface
 def make_array_transparent(rgb_array_: ndarray, alpha_array_: ndarray, alpha_: int)->Surface
 def transparent_mask(image: pygame.Surface, mask_alpha: numpy.ndarray)
 ```
-![alt text](Assets/Leopard.jpg)
-![alt text](Assets/transparency64.png)
+### Opacity methods
+```
+def make_opaque(image_:Surface, alpha_: int) -> Surface
+def make_opaque_buffer(image_:Surface, alpha_: int) -> Surface
+def make_array_opaque(rgb_array_:ndarray, alpha_array_:ndarray, alpha_: int) -> Surface
+```
+### Blink surface 
+```
+def blink32(image_: Surface, alpha_: int) -> Surface
+def blink32_mask(image_: Surface, alpha_: int) -> Surface
+```
+### Filtering RGB values 
+```
+def low_th_alpha(surface_: Surface, new_alpha_: int, threshold_: int) -> Surface
+def high_th_alpha(surface_: Surface, new_alpha_: int, threshold_: int) -> Surface
+```
