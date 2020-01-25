@@ -171,3 +171,28 @@ def greyscale_3d_to_2d(array_: ndarray)->ndarray
 # out: greyscale 3d array shape (width, height, 3)
 def greyscale_2d_to_3d(array_: ndarray)->ndarray
 ```
+### Black and White transform 
+```
+def bw_surface24(image: pygame.Surface)->tuple
+def bw_surface32(image: pygame.Surface)->tuple
+def bw_array(array: numpy.ndarray)->numpy.ndarray
+```
+
+### Colorize 
+```
+# Buffers 
+def redscale_buffer(image: Surface)->Surface
+def redscale_alpha_buffer(image: Surface)->Surface
+def greenscale_buffer(image: Surface)->Surface
+def greenscale_alpha_buffer(image: Surface)->Surface
+def bluescale_buffer(image: Surface)->Surface
+def bluescale_alpha_buffer(image: Surface)->Surface
+
+# Arrays
+def redscale(image: Surface)->Surface
+def redscale_alpha(image: Surface)->Surface
+def greenscale(image: Surface)->Surface
+def greenscale_alpha(image: Surface)->Surface
+def bluescale(image: Surface)->Surface
+def bluescale_alpha(image: Surface)->Surface
+```
