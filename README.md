@@ -104,13 +104,11 @@ And a C compiler.
 ```
 
 ### Transparency methods
-
+```
 def make_transparent(image_: Surface, alpha_: int)->Surface
 def make_transparent_buffer(image_: Surface, alpha_: int)->Surface
 def make_array_transparent(rgb_array_: ndarray, alpha_array_: ndarray, alpha_: int)->Surface
 def transparent_mask(image: pygame.Surface, mask_alpha: numpy.ndarray)
-
-
-
+```
 ![alt text](Assets/Leopard.jpg)
 ![alt text](Assets/transparency64.png)
