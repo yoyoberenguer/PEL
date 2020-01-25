@@ -134,3 +134,17 @@ def blink32_mask(image_: Surface, alpha_: int) -> Surface
 def low_th_alpha(surface_: Surface, new_alpha_: int, threshold_: int) -> Surface
 def high_th_alpha(surface_: Surface, new_alpha_: int, threshold_: int) -> Surface
 ```
+### Greyscale methods
+```
+# Conserve lightness
+def greyscale_light_alpha(image: Surface)->Surface
+def greyscale_light(image: Surface)->Surface
+
+# Conserve luminosity 
+def greyscale_lum_alpha(image: Surface)->Surface
+def greyscale_lum(image: Surface)->Surface
+
+# Average values
+def make_greyscale_32(image: Surface)->Surface
+def make_greyscale_24(image: Surface)->Surface
+```
