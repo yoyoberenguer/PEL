@@ -103,12 +103,31 @@ NUMPY
 And a C compiler.
 ```
 
-### Transparency method
-```
-def make_transparent(image_: Surface, alpha_: int)->Surface:
-    return make_transparent_c(image_, alpha_)
+### Transparency methods
 
-surface = make_transparent(image, 64)
-```
+def make_transparent(image_: Surface, alpha_: int)->Surface
+    The pygame surface must be a 32-bit image containing per-pixel.
+    
+    Add transparency to a pygame surface.
+    <alpha_> must be an integer in range[0 ... 255] otherwise raise a value error.
+    <alpha_> = 255, the output surface will be 100% transparent,  <alpha_> = 0, no change.
+    
+    The code will raise a value error if the the surface is not encoded with per-pixel transparency. 
+    ValueError: Surface without per-pixel information.
+    
+    EXAMPLE: 
+        image = pygame.image.load('your image')
+        output = make_transparent(image, 100) 
+
+    :param image_: pygame.surface, 32-bit format image containing per-pixel  
+    :param alpha_: integer value for alpha channel
+    :return: Return a 32-bit pygame surface containing per-pixel.
+
+def make_transparent_buffer(image_: Surface, alpha_: int)->Surface
+def make_array_transparent(rgb_array_: ndarray, alpha_array_: ndarray, alpha_: int)->Surface
+def transparent_mask(image: pygame.Surface, mask_alpha: numpy.ndarray)
+
+
+
 ![alt text](Assets/Leopard.jpg)
 ![alt text](Assets/transparency64.png)
