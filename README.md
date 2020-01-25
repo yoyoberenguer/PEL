@@ -180,7 +180,7 @@ def bw_array(array: numpy.ndarray)->numpy.ndarray
 
 ### Colorize 
 ```
-# Buffers 
+# Buffer methods
 def redscale_buffer(image: Surface)->Surface
 def redscale_alpha_buffer(image: Surface)->Surface
 def greenscale_buffer(image: Surface)->Surface
@@ -188,7 +188,7 @@ def greenscale_alpha_buffer(image: Surface)->Surface
 def bluescale_buffer(image: Surface)->Surface
 def bluescale_alpha_buffer(image: Surface)->Surface
 
-# Arrays
+# Array methods
 def redscale(image: Surface)->Surface
 def redscale_alpha(image: Surface)->Surface
 def greenscale(image: Surface)->Surface
@@ -196,3 +196,60 @@ def greenscale_alpha(image: Surface)->Surface
 def bluescale(image: Surface)->Surface
 def bluescale_alpha(image: Surface)->Surface
 ```
+### Loading images with per-pixels transparency
+```
+def load_per_pixel(file: str)->Surface
+def load_image32(path: str)->tuple
+```
+### Loading sprite sheet
+```
+def spritesheet_per_pixel(file_: str, chunk_: int,
+                          colums_: int, rows_: int)->list:
+
+def spritesheet_per_pixel_fs8(file: str, chunk: int,
+                              columns_: int, rows_: int, tweak_:bool=False, *args)->list:
+                        
+def spritesheet_alpha(file: str, chunk: int, columns_: int,
+                      rows_: int, tweak_:bool=False, *args)->list:
+
+def spritesheet(file, int chunk, int columns_, int rows_,
+                tweak_: bool = False, *args)->list:
+
+def spritesheet_fs8(file: str, chunk: int, columns_: int,
+                    rows_: int, tweak_: bool=False, *args) -> list:
+
+def spritesheet_new(file_: str, chunk_: int, columns_: int, rows_: int):
+    return spritesheet_new_c(file_, chunk_, columns_, rows_)
+
+```
+### Shadow method
+```
+def shadow32(image: Surface, attenuation: float)->Surface:
+def shadow32buffer(image: Surface, attenuation: float)->Surface:
+```
+### RGB split
+```
+# compatible 24 bit
+def rgb_split(surface_: Surface)->tuple
+def rgb_split_buffer(surface_: Surface)-> tuple
+
+# compatible 32bit
+def rgb_split32(surface_: Surface) 
+def rgb_split32_buffer(surface_: Surface) 
+
+# extract channel
+def red_channel(surface_: Surface)->Surface 
+def green_channel(surface_: Surface)->Surface 
+def blue_channel(surface_: Surface)->Surface  
+
+# Buffers
+def red_channel_buffer(surface_: Surface)->Surface 
+def green_channel_buffer(surface_: Surface)->Surface 
+def blue_channel_buffer(surface_: Surface)->Surface  
+
+
+
+```
+
+
+
