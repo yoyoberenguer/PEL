@@ -137,14 +137,25 @@ def high_th_alpha(surface_: Surface, new_alpha_: int, threshold_: int) -> Surfac
 ### Greyscale methods
 ```
 # Conserve lightness
+
 def greyscale_light_alpha(image: Surface)->Surface
 def greyscale_light(image: Surface)->Surface
 
 # Conserve luminosity 
+
 def greyscale_lum_alpha(image: Surface)->Surface
 def greyscale_lum(image: Surface)->Surface
 
 # Average values
+
 def make_greyscale_32(image: Surface)->Surface
 def make_greyscale_24(image: Surface)->Surface
+
+# greyscale arrays 
+
+def make_greyscale_altern(image: Surface)->Surface
+def greyscale_arr2surf(array_: ndarray)->Surface
+def greyscale_array(array_: ndarray)->ndarray
+def greyscale_3d_to_2d(array_: ndarray)->ndarray
+def greyscale_2d_to_3d(array_: ndarray)->ndarray
 ```
