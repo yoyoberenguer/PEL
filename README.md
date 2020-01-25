@@ -102,3 +102,13 @@ OPENCV
 NUMPY
 And a C compiler.
 ```
+
+## Transparency method
+```
+def make_transparent(image_: Surface, alpha_: int)->Surface:
+    return make_transparent_c(image_, alpha_)
+
+surface = make_transparent(image, 64)
+```
+![alt text](https://github.com/yoyoberenguer/PEL/blob/master/LEOPARD.jpg)
+![alt text](https://github.com/yoyoberenguer/PEL/blob/master/LEOPARD64.png)
