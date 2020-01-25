@@ -150,12 +150,24 @@ def greyscale_lum(image: Surface)->Surface
 
 def make_greyscale_32(image: Surface)->Surface
 def make_greyscale_24(image: Surface)->Surface
+def make_greyscale_altern(image: Surface)->Surface
 
 # greyscale arrays 
 
-def make_greyscale_altern(image: Surface)->Surface
+# 3d array to surface
+# in : RGB array shape (width, height, 3)
+# out: Greyscale pygame surface 
 def greyscale_arr2surf(array_: ndarray)->Surface
+
+# in : RGB array shape (width, height, 3)
+# out: greyscale array (width, height, 3)
 def greyscale_array(array_: ndarray)->ndarray
+
+# in : RGB array shape (width, height, 3)
+# out: greyscale 2d array shape (width, height)
 def greyscale_3d_to_2d(array_: ndarray)->ndarray
+
+# in : 2d array shape (width, height)
+# out: greyscale 3d array shape (width, height, 3)
 def greyscale_2d_to_3d(array_: ndarray)->ndarray
 ```
