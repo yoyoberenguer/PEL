@@ -110,5 +110,5 @@ def make_transparent(image_: Surface, alpha_: int)->Surface:
 
 surface = make_transparent(image, 64)
 ```
-![alt text](https://github.com/yoyoberenguer/PEL/blob/master/LEOPARD.jpg)
-![alt text](https://github.com/yoyoberenguer/PEL/blob/master/LEOPARD64.png)
+![alt text](https://github.com/yoyoberenguer/PEL/blob/master/Assets/LEOPARD.jpg)
+![alt text](https://github.com/yoyoberenguer/PEL/blob/master/Assets/LEOPARD64.png)
