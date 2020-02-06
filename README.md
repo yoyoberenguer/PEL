@@ -1,4 +1,4 @@
-# PEL (Pygame Effect Library)
+# PEL (Pygame Effects Library)
 ### Under active development 
 
 
