@@ -135,8 +135,9 @@ def low_th_alpha(surface_: Surface, new_alpha_: int, threshold_: int) -> Surface
 def high_th_alpha(surface_: Surface, new_alpha_: int, threshold_: int) -> Surface
 ```
 ### Greyscale methods
-```
+```python
 # Conserve lightness
+````
 ```python
 def greyscale_light_alpha(image: Surface)->Surface
 def greyscale_light(image: Surface)->Surface
