@@ -112,48 +112,48 @@ And a C compiler.
 ```
 
 ### Transparency methods
-```
+```python
 def make_transparent(image_: Surface, alpha_: int)->Surface
 def make_transparent_buffer(image_: Surface, alpha_: int)->Surface
 def make_array_transparent(rgb_array_: ndarray, alpha_array_: ndarray, alpha_: int)->Surface
 def transparent_mask(image: pygame.Surface, mask_alpha: numpy.ndarray)
 ```
 ### Opacity methods
-```
+```python
 def make_opaque(image_:Surface, alpha_: int) -> Surface
 def make_opaque_buffer(image_:Surface, alpha_: int) -> Surface
 def make_array_opaque(rgb_array_:ndarray, alpha_array_:ndarray, alpha_: int) -> Surface
 ```
 ### Blink surface 
-```
+```python
 def blink32(image_: Surface, alpha_: int) -> Surface
 def blink32_mask(image_: Surface, alpha_: int) -> Surface
 ```
 ### Filtering RGB values 
-```
+```python
 def low_th_alpha(surface_: Surface, new_alpha_: int, threshold_: int) -> Surface
 def high_th_alpha(surface_: Surface, new_alpha_: int, threshold_: int) -> Surface
 ```
 ### Greyscale methods
 ```
 # Conserve lightness
-
+```python
 def greyscale_light_alpha(image: Surface)->Surface
 def greyscale_light(image: Surface)->Surface
-
+```
 # Conserve luminosity 
-
+```python
 def greyscale_lum_alpha(image: Surface)->Surface
 def greyscale_lum(image: Surface)->Surface
-
+```
 # Average values
-
+```python
 def make_greyscale_32(image: Surface)->Surface
 def make_greyscale_24(image: Surface)->Surface
 def make_greyscale_altern(image: Surface)->Surface
-
+```
 # greyscale arrays 
-
+```python
 # 3d array to surface
 # in : RGB array shape (width, height, 3)
 # out: Greyscale pygame surface 
@@ -172,14 +172,14 @@ def greyscale_3d_to_2d(array_: ndarray)->ndarray
 def greyscale_2d_to_3d(array_: ndarray)->ndarray
 ```
 ### Black and White transform 
-```
+```python
 def bw_surface24(image: pygame.Surface)->tuple
 def bw_surface32(image: pygame.Surface)->tuple
 def bw_array(array: numpy.ndarray)->numpy.ndarray
 ```
 
 ### Colorize 
-```
+```python
 # Buffer methods
 def redscale_buffer(image: Surface)->Surface
 def redscale_alpha_buffer(image: Surface)->Surface
@@ -197,12 +197,12 @@ def bluescale(image: Surface)->Surface
 def bluescale_alpha(image: Surface)->Surface
 ```
 ### Loading images with per-pixels transparency
-```
+```python
 def load_per_pixel(file: str)->Surface
 def load_image32(path: str)->tuple
 ```
 ### Loading sprite sheet
-```
+```python
 def spritesheet_per_pixel(file_: str, chunk_: int,
                           colums_: int, rows_: int)->list:
 
@@ -223,12 +223,12 @@ def spritesheet_new(file_: str, chunk_: int, columns_: int, rows_: int):
 
 ```
 ### Shadow method
-```
+```python
 def shadow32(image: Surface, attenuation: float)->Surface:
 def shadow32buffer(image: Surface, attenuation: float)->Surface:
 ```
 ### RGB split
-```
+```python
 # compatible 24 bit
 def rgb_split(surface_: Surface)->tuple
 def rgb_split_buffer(surface_: Surface)-> tuple
